@@ -326,6 +326,19 @@
 			color: black;
 		}
 
+		/* Este será el estilo por defecto (móvil) */
+		#separador-2 {
+		  background-attachment: scroll;
+		}
+		
+		/* Cuando la pantalla tenga al menos 768px de ancho, se aplicará este estilo (escritorio) */
+		@media (min-width: 768px) {
+		  #separador-2 {
+		    background-attachment: fixed;
+		  }
+		}
+
+
 
 
 
@@ -496,12 +509,9 @@
 <div class="grid grid-cols-1 gap-8 md:grid-cols-6 lg:grid-cols-4 text-center justify-center" id="contenedor-marcas-1"><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href="https://andrebestrada.github.io/carsonhats.github.io/"><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-1" src="https://cdn-bkokl.nitrocdn.com/mSfGKPPXzHowwswckwGuGVqpqnmIbzaY/assets/images/optimized/rev-16fe432/wp-content/uploads/2020/05/Distribuidora-de-Sombreros-1024x633-1-e1588789895293-768x313.png"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href="https://dycmaco.com/"><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-2" src="https://firebasestorage.googleapis.com/v0/b/dycmaco-71ffe.appspot.com/o/output-onlinepngtools%20(4).png?alt=media&amp;token=5db7f44e-50ac-4ca5-90c7-26d9d4512c5c"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href=""><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-3" src="https://firebasestorage.googleapis.com/v0/b/dios-cacao.appspot.com/o/DiosCacao.png?alt=media&amp;token=1e418ce9-6976-4ae6-a670-a84ac96e1b01"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href=""><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-4" src="https://th.bing.com/th/id/R.9d44931c77b4e0406d2a361296f321b3?rik=C7YpE8oRdGA21A&amp;riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f10%2fShopify_logo_wordmark.png&amp;ehk=eHi71NqrlrPAj0uG3e%2fDamm9Yx%2bPvP33VWdPQezlj%2b8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0"/></a></div></div><hr class="my-12 mx-10 border-gray-200 dark:border-gray-700"/></section>
 <!-- Imagen Separador -->
 <section class="bg-white relative" style="height: 500px;">
-<div class="absolute inset-0 bg-cover bg-center" id="separador-2" style="background-image: url('https://media.discordapp.net/attachments/1114023780071768084/1117978625401167902/tuwebsimple444_Business_building_shot_with_Nikon_D850_and_Nikon_0435e9da-97cc-467b-8064-9750bd4a2392.png?width=1399&amp;height=600'); background-attachment: fixed;"></div>
+  <div class="absolute inset-0 bg-cover bg-center" id="separador-2" style="background-image: url('https://media.discordapp.net/attachments/1114023780071768084/1117978625401167902/tuwebsimple444_Business_building_shot_with_Nikon_D850_and_Nikon_0435e9da-97cc-467b-8064-9750bd4a2392.png?width=1399&amp;height=600');"></div>
 </section>
-<!-- Imagen Separador -->
-<section class="bg-white relative" style="height: 500px;">
-<div class="absolute inset-0 bg-cover bg-center" id="separador-2" style="background-image: url('https://media.discordapp.net/attachments/1114023780071768084/1117978625401167902/tuwebsimple444_Business_building_shot_with_Nikon_D850_and_Nikon_0435e9da-97cc-467b-8064-9750bd4a2392.png?width=1399&amp;height=600'); background-attachment: fixed; height: 500px;"></div>
-</section>
+
 
 	
 <!-- Sección Video a la Derecha -->
