@@ -289,9 +289,7 @@
 			.skew-right {
 				transform: rotateY(-5deg) rotateX(1deg) skew(-5deg,1deg) scale(0.9) translateX(-8%);
 			}
-			#cta-imagen {
-				height: 800px;
-			}
+			
 		}
 
 		.perspective-right {
@@ -389,16 +387,16 @@
 		}
 		}
 
-		/* Por defecto, la posición del background será al centro */
-		#cta-imagen {
-		background-position: center;
-		}
-
 		/* Cuando la pantalla tenga al menos 768px de ancho, la posición del background será el 300% */
 		@media (min-width: 768px) {
 		#cta-imagen {
 			background-position: 300%;
+			background-attachment: fixed;
 		}
+		}
+		/* Por defecto, la posición del background será al centro */
+		#cta-imagen {
+			background-attachment: scroll;
 		}
 
 
@@ -492,13 +490,13 @@
 <div class="text-center py-10 px-1 md:px-0">
 <h1 class="text-2xl font-bold text-white md:text-4xl drop-shadow-xl" data-aos="fade-up" data-aos-delay="800" id="slogan">Páginas Web Personalizadas con Inteligencia Artificial</h1>
 <div class="flex justify-center mt-4 space-x-0 md:space-x-2">
-<a class="text-right" href="#imagen-cliente">
+<a class="text-right" href="#contacto">
 <button class="inline-flex items-center px-4 md:px-5 py-2 text-sm md:text-m font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:scale-105 hover:bg-blue-500 focus:outline-none focus:bg-blue-500 drop-shadow-xl" data-aos="fade-up" data-aos-delay="1000" id="hero-boton-1"><!-- SVG icon -->
 <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
 </svg>Cotiza tu sitio web</button>
 </a>
-<a class="text-left" href="#categorias-title">
+<a class="text-left" href="#contenedor-marcas">
 <button class="inline-flex items-center px-4 md:px-5 py-2 text-sm md:text-m font-medium text-white capitalize transition-colors duration-300 transform bg-white-600 rounded-md hover:text-gray-700 hover:bg-blue-50 focus:outline-none focus:bg-blue-500 drop-shadow-xl" data-aos="fade-up" data-aos-delay="1200" id="hero-boton-2">Ver páginas web</button>
 </a>
 </div>
@@ -566,12 +564,11 @@
 </section>
 <!-- Sección con logos -->
 <section class="p-10" id="contenedor-marcas">
-<h1 class="text-4xl md:text-6xl md:pb-10 font-medium text-center text-gray-800 capitalize drop-shadow-xl" data-aos="fade-up" data-aos-delay="0" id="marcas-title">Explora nuestros sitios web</h1>
+<h1 class="text-4xl md:text-6xl pb-10 font-medium text-center text-gray-800 capitalize drop-shadow-xl" data-aos="fade-up" data-aos-delay="0" id="marcas-title">mira nuestros sitios web</h1>
 <div class="grid grid-cols-1 gap-8 md:grid-cols-6 lg:grid-cols-4 text-center justify-center" id="contenedor-marcas-1"><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href="https://andrebestrada.github.io/carsonhats.github.io/"><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-1" src="https://cdn-bkokl.nitrocdn.com/mSfGKPPXzHowwswckwGuGVqpqnmIbzaY/assets/images/optimized/rev-16fe432/wp-content/uploads/2020/05/Distribuidora-de-Sombreros-1024x633-1-e1588789895293-768x313.png"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href="https://dycmaco.com/"><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-2" src="https://firebasestorage.googleapis.com/v0/b/dycmaco-71ffe.appspot.com/o/output-onlinepngtools%20(4).png?alt=media&amp;token=5db7f44e-50ac-4ca5-90c7-26d9d4512c5c"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href=""><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-3" src="https://firebasestorage.googleapis.com/v0/b/dios-cacao.appspot.com/o/DiosCacao.png?alt=media&amp;token=1e418ce9-6976-4ae6-a670-a84ac96e1b01"/></a></div><div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50"><a href=""><img alt="logo" class="hover:scale-125, hover:opacity-50" id="marca-4" src="https://th.bing.com/th/id/R.9d44931c77b4e0406d2a361296f321b3?rik=C7YpE8oRdGA21A&amp;riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f10%2fShopify_logo_wordmark.png&amp;ehk=eHi71NqrlrPAj0uG3e%2fDamm9Yx%2bPvP33VWdPQezlj%2b8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0"/></a></div></div><hr class="my-12 mx-10 border-gray-200 dark:border-gray-700"/></section>
 <!-- Sección CTA -->
 <section class="mb-32">
-<div class="cta-background relative z-0 py-20 overflow-hidden bg-no-repeat bg-cover bg-center aos-init order-last" id="cta-imagen" style="background-image:url(https://media.discordapp.net/attachments/1114023780071768084/1117919078145867776/tuwebsimple444_Business_building_shot_with_Nikon_D850_and_Nikon_84257beb-a6ed-414e-b765-736bf4646b57.png?width=1247&amp;height=534); height: 500px; background-attachment: fixed; background-position: center;">
-</div>
+<div class="cta-background relative z-0 py-20 overflow-hidden bg-no-repeat bg-cover bg-center aos-init order-last" id="cta-imagen" style="background-image:url(https://media.discordapp.net/attachments/1114023780071768084/1117919078145867776/tuwebsimple444_Business_building_shot_with_Nikon_D850_and_Nikon_84257beb-a6ed-414e-b765-736bf4646b57.png?width=1247&amp;height=534); height: 500px; background-attachment: fixed; background-position: center;"></div>
 <div class="relative z-50 container mx-auto px-6 md:px-10 md:pt-10 order-first">
 <div class="text-center text-gray-800">
 <div class="relative block rounded-lg shadow-lg px-2 py-12 md:py-16 md:px-12 aos-init" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50" style="margin-top: -170px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(5px);">
